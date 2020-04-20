@@ -29,3 +29,4 @@ admin.site.register(models.User, UserAdmin)
 # Recipe starts from here
 
 admin.site.register(models.Tag)
+admin.site.register(models.Ingredient)
