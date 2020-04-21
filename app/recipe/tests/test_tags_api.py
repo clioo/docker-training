@@ -53,7 +53,6 @@ class PrivateTagsApiTests(TestCase):
         response = self.client.get(TAGS_URL)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 1)
-        print(response.data)
         self.assertEqual(response.data[0]['name'], tag.name)
 
     def test_create_tag_successful(self):
